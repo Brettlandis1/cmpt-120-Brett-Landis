@@ -1,7 +1,7 @@
 # add two numbers together 
 def add(number1, number2):
     return (number1 + number2)
-
+ 
 # Returns the result of a minus b.
 def subtract(a, b):
     return (a - b)
