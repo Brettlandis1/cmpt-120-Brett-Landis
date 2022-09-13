@@ -16,7 +16,7 @@ def divide(a, b):
 
 # Returns the result of a to the power of b.  
 def power(a, b):
-    return (a^b)
+    return (a ** b)
 
 # Returns the result of a modulo b.  
 def mod(a, b):
