@@ -1,6 +1,6 @@
 from tkinter.tix import Tree
 
-
+# a method to get an int
 def get_int():
     '''
     Returns a variable of type 'int'.
