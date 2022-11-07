@@ -14,7 +14,7 @@ Add the following lines to your `requirements.txt` file in your root folder of y
 
 ```bash
 # Package is a tool for creating a RESTful interface.
-flask-restful
+flask
 ```
 
 Next, ensure that your Python3 virtual enviroment is activated.
@@ -33,7 +33,7 @@ Next, ensure that your Python3 virtual enviroment is activated.
    .\venv\Scripts\activate.bat
    ```
 
-And once it is activated; run the following command to actually installed onto your virtual environment.
+And once it is activated; run the following command to actually install `flask` onto your virtual environment.
 
 ```bash
 # This
@@ -46,20 +46,27 @@ Once you installed Flask onto Python environment; run the following command to e
 flask --version
 ```
 
-### Step 2: Analyzing/running the Flask Application
+### Step 2: Analyzing/Running the Flask Application
 
-So now that we have Flask installed on our machines. We have a file in this package called `main.py` and let's go ahead and open it up and look through the code.
+## So now that we have Flask installed on our machines. We have a file in this package called `main.py` and let's go ahead and open it up and look through the code.
 
-- The first thing we see at the top of the file is an import of the Flask object from the flask package.
-  ```python
-  from flask import Flask
-  ```
-- The next thing we see is the creation of an instance of the Flask object.
-  ```python
-  app = Flask(__name__)
-  ```
-- The third thing we see is the creation of a function called `hello()`. This is a function but here we see something a little different that what we are normally seeing. This function has something above it called an **_annotation_**. Annotations are used to inform the interpreter and libraries that the following code has a specific function. In our case we are informing the Flask library that the function should be exposed to the web.
-- The last thing we see is the invocation of the Flask object's `run` method which starts our REST API application.
+1. The first thing we see at the top of the file is an import of the Flask object from the flask package.
+
+   ```python
+   from flask import Flask
+   ```
+
+2. The next thing we see is the creation of an instance of the Flask object.
+
+   ```python
+   app = Flask(__name__)
+   ```
+
+3. The third thing we see is the creation of a function called `hello()`. This is a function but here we see something a little different that what we are normally seeing. This function has something above it called an **_annotation_**. Annotations are used to inform the interpreter and libraries that the following code has a specific function. In our case we are informing the Flask library that the function should be exposed to the web.
+
+4. The last thing we see is the invocation of the Flask object's `run` method which starts our REST API application.
+
+#### Running the Server
 
 Now let us start our Flask application server and test our first endpoint! Run the following code:
 
@@ -112,9 +119,9 @@ def get_books():
     return jsonify({"books": books})
 ```
 
-Now let's give this a run: http://127.0.0.1:5000/books. You will now see all the books we defined in the books list object in JSON. Keep in mind, typically these REST APIs are used to fetch data from
+Now let's give this a run: http://127.0.0.1:5000/books. You will now see all the books we defined in the books list object in JSON. Keep in mind, typically these REST APIs are used to fetch data from a backend database.
 
-We have our very own REST API. It returns a JSON to us. So that means if you have ever worked with an API before, this is more or less the format/data that comes back from a REST API. Obviously we won’t be covering all the different endpoints that you can create since that would be too much information in one assignment. We will however create a GET with a specified ID of the model since that is a pretty common endpoint as well.
+Okay, so now ee have our very own REST API. It returns a JSON to us. So that means if you have ever worked with an API before, this is more or less the format/data that comes back from a REST API. Obviously we won’t be covering all the different endpoints that you can create since that would be too much information in one assignment. We will however create a GET with a specified ID of the model since that is a pretty common endpoint as well.
 
 So now let's create an endpoint that is ID specific.
 
