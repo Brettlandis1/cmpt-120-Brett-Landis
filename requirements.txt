@@ -5,4 +5,4 @@ pytest==7.1.2
 autopep8==1.7.0
 
 # Package is a tool for creating REST APIs.
-flask
+flask==2.2.2
