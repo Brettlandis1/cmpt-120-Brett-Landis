@@ -14,7 +14,7 @@ Add the following lines to your `requirements.txt` file in your root folder of y
 
 ```bash
 # Package is a tool for creating a RESTful interface.
-flask
+flask==2.2.2
 ```
 
 Next, ensure that your Python3 virtual enviroment is activated.
