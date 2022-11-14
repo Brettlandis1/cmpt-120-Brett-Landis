@@ -3,7 +3,7 @@ from arithmetic import *
 
 class TestClass:
     '''
-    This class contains the test functions for lab assignment 1.
+    This class contains the test functions for lab assignment 2.
     '''
     
     def test_get_int(self):
@@ -74,4 +74,3 @@ class TestClass:
         Test that the mod(a, b) function properly get the result of a mod b.
         '''
         assert mod(3, 3) == 0
-        
