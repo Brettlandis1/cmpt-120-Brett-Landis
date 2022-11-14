@@ -1,5 +1,6 @@
 # environment folders
 venv
+env
 
 # Robot Framework test output
 output.xml
